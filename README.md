@@ -1,134 +1,168 @@
 # Major_project
-Customer Churn Predictor
-Overview
+# Customer Churn Predictor
 
-Customer Churn Predictor is a web-based application designed to analyze telecom customer details and estimate the probability of customer churn (customers leaving a telecom service provider).
+A responsive web-based telecom customer churn prediction system that analyzes customer information and estimates the likelihood of customer churn using a rule-based scoring approach.
 
-The application allows users to enter customer profile information, service usage details, billing information, and telecom partner selection, then predicts churn risk as:
+---
 
-Low Churn Risk
-Medium Churn Risk
-High Churn Risk
+## Overview
 
-The prediction is based on rule-based scoring logic using customer behavior patterns.
+Customer churn refers to customers leaving a service provider. This project predicts churn risk based on customer profile, services, billing information, and usage patterns.
 
-Features
-Telecom Partner Selection
+The system classifies customers into:
 
-Users can select a telecom operator:
+- 🟢 Low Churn Risk
+- 🟡 Medium Churn Risk
+- 🔴 High Churn Risk
 
-Reliance Jio
-Airtel
-VI-Idea
-BSNL
+---
 
-The selected provider is highlighted.
+## Features
 
-Customer Information
-Usage & Charges
-Tenure (months)
-Monthly charges
-Total charges
-Customer Profile
-Gender
-Senior citizen status
-Partner status
-Dependents
-Services
-Phone service
-Multiple lines
-Internet service
-Online security
-Online backup
-Device protection
-Tech support
-Streaming TV
-Streaming movies
-Billing & Contract
-Contract type
-Payment method
-Paperless billing
-Prediction Logic
+### Telecom Provider Selection
+Users can choose among:
 
-The system calculates a churn score from 0–100.
+- Reliance Jio
+- Airtel
+- VI-Idea
+- BSNL
 
-Risk scoring factors:
+### Customer Details
 
-Factor	Impact
-Short tenure	Increase risk
-Month-to-month contract	Increase risk
-Fiber internet	Increase risk
-Electronic check payment	Increase risk
-Senior citizen	Increase risk
-No online security	Increase risk
-No tech support	Increase risk
-No partner/dependents	Increase risk
-High monthly charges	Increase risk
-Long tenure	Reduce risk
-Two-year contract	Reduce risk
-Risk Levels
-High Risk
+#### Usage & Charges
+- Tenure (months)
+- Monthly Charges
+- Total Charges
 
-Score ≥ 65
+#### Customer Profile
+- Gender
+- Senior Citizen
+- Partner
+- Dependents
 
-Description:
-Customer has a high chance of leaving. Immediate retention actions are recommended.
+#### Services
+- Phone Service
+- Multiple Lines
+- Internet Service
+- Online Security
+- Online Backup
+- Device Protection
+- Tech Support
+- Streaming TV
+- Streaming Movies
 
-Medium Risk
+#### Billing & Contract
+- Contract Type
+- Payment Method
+- Paperless Billing
 
-Score between 35–64
+---
 
-Description:
-Customer may leave in the future. Proactive engagement is recommended.
+## Technologies Used
 
-Low Risk
+- HTML5
+- CSS3
+- JavaScript
 
-Score < 35
+---
 
-Description:
-Customer appears loyal and satisfied.
+## Project Structure
 
-Technologies Used
-Frontend
-HTML5
-CSS3
-JavaScript
-UI Features
-Responsive layout
-Custom telecom cards
-Dynamic risk visualization
-Animated progress bar
-Interactive customer forms
-Project Structure
+```bash
 Customer-Churn-Predictor/
 │
 ├── index.html
 ├── README.md
 └── assets/
-How to Run
-Download the project files
-Save the code as:
+```
+
+---
+
+## Prediction Logic
+
+The application calculates a churn score between **0–100**.
+
+### Risk Factors
+
+| Factor | Effect |
+|----------|---------|
+| Short tenure | Increase risk |
+| Month-to-month contract | Increase risk |
+| Fiber optic service | Increase risk |
+| Electronic check payment | Increase risk |
+| Senior citizen | Increase risk |
+| No online security | Increase risk |
+| No tech support | Increase risk |
+| High monthly charges | Increase risk |
+| Long tenure | Reduce risk |
+| Two-year contract | Reduce risk |
+
+---
+
+## Risk Classification
+
+### High Risk
+Score ≥ 65
+
+Recommendation:
+Immediate retention action should be taken.
+
+### Medium Risk
+Score 35–64
+
+Recommendation:
+Monitor and engage customer proactively.
+
+### Low Risk
+Score < 35
+
+Recommendation:
+Customer appears stable and loyal.
+
+---
+
+## How to Run
+
+1. Download or clone the project:
+
+```bash
+git clone https://github.com/your-username/customer-churn-predictor.git
+```
+
+2. Open the project folder
+
+3. Run:
+
+```bash
 index.html
-Open the file in a browser
+```
 
-OR use a local server:
+Or use VS Code Live Server extension.
 
-Live Server (VS Code)
-Future Improvements
-Integrate Machine Learning models
-Connect with real telecom datasets
-Add charts and analytics dashboards
-Store prediction history
-Export reports as PDF
-Add authentication system
-Backend API integration
-Dataset Information
+---
 
-Dataset characteristics:
+## Future Improvements
 
-Customers: 7,043
-Features: 31
-Domain: Telecom Customer Churn Analysis
-Author
+- Integrate Machine Learning model
+- Connect with real telecom datasets
+- Add dashboard analytics
+- Store prediction history
+- Generate PDF reports
+- Add backend API integration
+- User authentication
 
-Developed for Telecom Customer Churn Analysis and Prediction using web technologies.
+---
+
+## Dataset Information
+
+Dataset Summary:
+
+- Total Customers: 7,043
+- Features: 31
+- Domain: Telecom Customer Churn
+
+---
+
+## Author
+
+Developed for telecom customer churn prediction and analysis using web technologies.
